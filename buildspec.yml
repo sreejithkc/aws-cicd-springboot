@@ -4,9 +4,9 @@ phases:
     commands:
   build:
     commands:
-        -mvn clean prepare-package war:exploded
+        - mvn clean prepare-package war:exploded
   post_build:
       commands:
   artifacts:
       files:
-        -deploy/**/*
+        - deploy/**/*
