@@ -10,5 +10,6 @@ phases:
     commands:
       - echo Entered the post_build phase...
   artifacts:
-  files:
-    - deploy/**/*
+    files:
+      - deploy/**/*
+    discard-paths: yes
