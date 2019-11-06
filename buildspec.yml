@@ -11,5 +11,5 @@ phases:
       - echo Entered the post_build phase...
   artifacts:
     files:
-      - deploy/**/*
+      - deploy/*
     discard-paths: yes
