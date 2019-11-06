@@ -7,7 +7,6 @@ phases:
         -mvn clean prepare-package war:exploded
   post_build:
       commands:
-         -mv target/deploy ./
-    artifacts:
+  artifacts:
       files:
         -deploy/**/*
