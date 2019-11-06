@@ -1,13 +1,13 @@
 version: 0.2
 phases:
-  pre-build:
+  pre_build:
     commands:
       -echo "Pre-build Phase"
     build:
       commands:
         -echo "Build Phase"
         -mvn clean prepare-package war:explode
-      post-build:
+      post_build:
         commands:
           -echo "Post Build"
           -mv target/deploy ./
